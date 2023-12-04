@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&family=Roboto&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+
+html, body {
+    margin: 0;
+    padding: 1;
+    color:white;
+    box-sizing: border-box;
+    background-color:#050729;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.first-page {
+    background-image: url(./images/car.png);
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+.social-media {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 80vw;
+    height: 60px;
+    width: 10vw;
+    background-color: #A276FF;
+    border-radius: 0 0 10px 10px;
+    min-width: 100px;
+    font-size: 30px;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* align-content: stretch; */
+    justify-content: space-around;
+    /* align-items: baseline; */
+}
+
+.img-sm {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.6rem;
+    z-index: 3;
+    opacity: 1;    
+}
+
+.logo {
+    margin-top: 70px;
+    z-index: 3;
+
+}
+
+.side {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    background-color: #050729;
+    
+       
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.side-bar a{
+    margin-top: 10%;
+}
+
+.bc {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    background-color:#050729;
+    z-index: -1;
+
+}
+
+a:hover {
+    color: #A276FF;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;    
+}
+
+.main {
+    margin: 0;
+    padding-top: 250px;
+    padding-left: 30%;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-template {
+    color: #A276FF;
+    font-weight: bold;
+    font-size: 120px;    
+    line-height: 117px;
+}
+
+.main-p{
+    width: 50vw;
+    
+}
+
+
+.main-btn {
+    width: 350px;
+    height: 80px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 17px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main-slider {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 100px;
+
+
+}
+
+.slider-item {
+    width: 260px;
+    height: 156px;
+    border-radius: 10px;
+    background-color:#fff ;
+}
+
+.item1 {
+    background: url(./images/1.png), lightgray 6px no-repeat ;   
+}
+
+.item2 {
+    background: url(./images/2.png), lightgray 6px no-repeat ;   
+}
+
+.item3 {
+    background: url(./images/3.png), lightgray 6px no-repeat ;   
+}
+
+.item4 {
+    background: url(./images/4.png), lightgray 6px no-repeat ;   
+}
+
+.news {
+    margin-top: 110px;
+}
+
+
+.news-sign {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.news-header {
+    display: flex;
+    align-items: start;
+    padding-right: 10px;
+    
+}
+
+h2 {
+    margin: 0;
+    font-size: 42px;
+
+}
+
+.news p {
+    font-size: 0.8rem;
+    width: 60vw;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+.second-page {
+    background-image: url(./images/car.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10%;
+    padding-left: 30%;
+    margin: 0;
+    color:black;
+    margin-top: 180px;
+    margin-bottom: 10%;
+}
+
+.article {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50vw;
+    padding: 140px 100px 140px;
+    background-color: #fff;
+    border-radius: 40px;
+    text-align: left;
+    
+}
+
+hr {
+    height: 7px;
+    background-color: #A276FF;
+    width: 90px;
+    margin: 0;
+
+}
+
+.article p{
+    font-size: 20px;
+}
+
+.article-img {
+    text-align: center;
+}
+
+
+.article-img p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 1280px) {
+.imgs{
+    width: 280px;
+     }
+}
+
+@media (max-width: 1080px) {
+    .article{
+        width: 400px;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .side {display: none;}
+  }
+
+
+
+
+
+
+
+
+
